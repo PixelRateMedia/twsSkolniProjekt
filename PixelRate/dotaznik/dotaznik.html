@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dotazník spokojenosti</title>
+    <link rel="stylesheet" href="dotaznik.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <form id="satisfaction-survey" action="/submit-form" method="post">
+        <h1>Dotazník spokojenosti s webem PixelRate
+        </h1>
+      
+        <label for="user_experience">Celkový dojem z webu:</label>
+        <input type="text" id="user_experience" name="user_experience">
+      
+        <label for="design_rating">Hodnocení designu (1-5) jako ve škole:</label>
+        <input type="number" id="design_rating" name="design_rating" min="1" max="5">
+
+        <label for="design_rating">Hodnocení přehlednosti(1-5) jako ve škole:</label>
+        <input type="number" id="design_rating" name="design_rating" min="1" max="5">
+      
+        <label for="ease_of_use">Snadnost použití:</label>
+        <label for="easy">Snadné</label>
+        <input type="radio" id="easy" name="ease_of_use" value="easy">
+        <label for="hard">Těžké</label>
+        <input type="radio" id="hard" name="ease_of_use" value="hard">
+        
+      
+        <label for="website_speed">Rychlost načítání stránky:</label>
+        <input type="range" id="website_speed" name="website_speed" min="1" max="10" class="custom-slider">
+
+        <label for="website_speed">Hodnocení galerie:</label>
+        <input type="range" id="website_speed" name="website_speed" min="1" max="10" class="custom-slider">
+        
+      
+        <label for="content_quality">Kvalita obsahu:</label>
+        <textarea id="content_quality" name="content_quality"></textarea>
+      
+        <label for="would_recommend">Doporučili byste náš web přátelům?</label>
+        <select id="would_recommend" name="would_recommend">
+          <option value="yes">Ano</option>
+          <option value="no">Ne</option>
+        </select>
+      
+        <label for="favorite_feature">Vaše oblíbená vlastnost webu:</label>
+        <input type="text" id="favorite_feature" name="favorite_feature">
+      
+        <label for="improvements">Návrhy na zlepšení:</label>
+        <textarea id="improvements" name="improvements"></textarea>
+      
+        <label for="additional_comments">Další komentáře:</label>
+        <textarea id="additional_comments" name="additional_comments"></textarea>
+      
+        <input type="submit" value="Odeslat">
+      </form>
+      
+</body>
+</html>
